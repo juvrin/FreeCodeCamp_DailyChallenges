@@ -6,15 +6,14 @@ def dive(map, coordinates):
             if j == "O":
                 check_unrecovered += 1
 
-
     if checkcor == "-":
-        result = "Empty" 
+        result = "Empty"
     elif checkcor == "O" and check_unrecovered == 1:
         result = "Recovered"
     else:
         result = "Found"
     return result
 
-test = dive([[ "-", "X"], [ "-", "O"], [ "-", "O"]], [1, 1]) 
-print(test)
 
+test = dive([["-", "X"], ["-", "O"], ["-", "O"]], [1, 1])
+print(test)
